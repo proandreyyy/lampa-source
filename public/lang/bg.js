@@ -724,6 +724,7 @@ export default {
     settings_param_background_image: 'Картина',
     settings_param_link_use_one: 'Главна',
     settings_param_link_use_two: 'Допълнителна',
+    settings_param_link_use_both: 'И двете',
     settings_param_subtitles_size_small: 'малки',
     settings_param_subtitles_size_normal: 'нормални',
     settings_param_subtitles_size_bigger: 'големи',
@@ -1286,4 +1287,9 @@ export default {
     filter_keyword_spy: 'Шпионин',
     filter_keyword_disaster: 'Катастрофа',
     filter_keyword_christmas: 'Коледа',
+
+    dmca_title_lgbt: 'Съдържание с ограничен достъп',
+    dmca_descr_lgbt: 'Преглеждането не е възможно във вашия регион, тъй като е възможно да съдържа ЛГБТ съдържание. Такива материали може да са забранени или ограничени в някои страни.',
+
+    settings_lgbt_content_block: 'Блокиране на ЛГБТ съдържание',
 }

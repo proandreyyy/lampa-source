@@ -727,6 +727,7 @@ export default {
     settings_param_background_image: 'Малюнак',
     settings_param_link_use_one: 'Асноўную',
     settings_param_link_use_two: 'Дадатковую',
+    settings_param_link_use_both: 'Абедзве',
     settings_param_subtitles_size_small: 'Маленькія',
     settings_param_subtitles_size_normal: 'Звычайныя',
     settings_param_subtitles_size_bigger: 'Вялікія',
@@ -1300,4 +1301,9 @@ export default {
     filter_keyword_spy: 'Шпіён', 
     filter_keyword_disaster: 'Катастрофа', 
     filter_keyword_christmas: 'Каляды',
+
+    dmca_title_lgbt: 'Кантэнт абмежаваны',
+    dmca_descr_lgbt: 'Прагляд недаступны ў вашым рэгіёне, так як магчыма змяшчае ЛГБТ-кантэнт. У некаторых краінах такія матэрыялы могуць быць забаронены ці абмежаваны.',
+
+    settings_lgbt_content_block: 'Блокіроўка ЛГБТ-контента',
 }

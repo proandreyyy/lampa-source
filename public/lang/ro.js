@@ -724,6 +724,7 @@ export default {
     settings_param_background_image: 'Imagine',
     settings_param_link_use_one: 'General',
     settings_param_link_use_two: 'Adițional',
+    settings_param_link_use_both: 'Ambele',
     settings_param_subtitles_size_small: 'Mici',
     settings_param_subtitles_size_normal: 'Obișnuite',
     settings_param_subtitles_size_bigger: 'Mari',
@@ -1284,4 +1285,9 @@ export default {
     filter_keyword_spy: 'Spionaj',
     filter_keyword_disaster: 'Catastrofă', 
     filter_keyword_christmas: 'Crăciun',
+
+    dmca_title_lgbt: 'Conținut restricționat',
+    dmca_descr_lgbt: 'Vizualizarea nu este disponibilă în regiunea dvs., deoarece poate include conținut LGBT. Un astfel de material poate fi interzis sau restricționat în unele țări.',
+
+    settings_lgbt_content_block: 'Blocați conținutul LGBT',
 }

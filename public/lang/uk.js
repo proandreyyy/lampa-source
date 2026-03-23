@@ -693,6 +693,7 @@ export default {
     settings_param_background_image: 'Картинка',
     settings_param_link_use_one: 'Основну',
     settings_param_link_use_two: 'Додаткову',
+    settings_param_link_use_both: 'Обидві',
     settings_param_subtitles_size_small: 'Маленькі',
     settings_param_subtitles_size_normal: 'Звичайні',
     settings_param_subtitles_size_bigger: 'Великі',
@@ -1260,4 +1261,9 @@ export default {
     filter_keyword_spy: 'Шпигун', 
     filter_keyword_disaster: 'Катастрофа', 
     filter_keyword_christmas: 'Різдво',
+
+    dmca_title_lgbt: 'Контент обмежений',
+    dmca_descr_lgbt: 'Перегляд недоступний у вашому регіоні, оскільки, можливо, містить ЛГБТ-контент. У деяких країнах такі матеріали можуть бути заборонені або обмежені.',
+
+    settings_lgbt_content_block: 'Блокувати ЛГБТ контент',
 }

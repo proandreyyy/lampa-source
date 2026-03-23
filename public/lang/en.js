@@ -724,6 +724,7 @@ export default {
     settings_param_background_image: 'Picture',
     settings_param_link_use_one: 'Main',
     settings_param_link_use_two: 'Additional',
+    settings_param_link_use_both: 'Both',
     settings_param_subtitles_size_small: 'small',
     settings_param_subtitles_size_normal: 'Ordinary',
     settings_param_subtitles_size_bigger: 'Large',
@@ -1285,4 +1286,9 @@ export default {
     filter_keyword_spy: 'Spy',
     filter_keyword_disaster: 'Catastrophe', 
     filter_keyword_christmas: 'Christmas',
+
+    dmca_title_lgbt: 'Content Restricted',
+    dmca_descr_lgbt: 'Viewing is unavailable in your region as it may contain LGBT content. Such material may be prohibited or restricted in some countries.',
+
+    settings_lgbt_content_block: 'Block LGBT content',
 }

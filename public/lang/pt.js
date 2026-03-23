@@ -723,6 +723,7 @@ export default {
     settings_param_background_image: 'Imagem',
     settings_param_link_use_one: 'Principal',
     settings_param_link_use_two: 'Secundário',
+    settings_param_link_use_both: 'Ambas',
     settings_param_subtitles_size_small: 'Pequeno',
     settings_param_subtitles_size_normal: 'Normal',
     settings_param_subtitles_size_bigger: 'Grande',
@@ -1270,4 +1271,9 @@ export default {
     filter_keyword_spy: 'Espião',
     filter_keyword_disaster: 'Catástrofe',
     filter_keyword_christmas: 'Natal',
+
+    dmca_title_lgbt: 'Conteúdo restrito',
+    dmca_descr_lgbt: 'A visualização não está disponível na sua região, pois pode conter conteúdo LGBT. Esse tipo de material pode ser proibido ou restrito em alguns países.',
+
+    settings_lgbt_content_block: 'Bloquear conteúdo LGBT',
 }

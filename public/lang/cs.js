@@ -828,6 +828,7 @@ export default {
     settings_param_background_image: "Obrázek",
     settings_param_link_use_one: "Hlavní",
     settings_param_link_use_two: "Doplňkovou",
+    settings_param_link_use_both: "Obě",
     settings_param_subtitles_size_small: "Malé",
     settings_param_subtitles_size_normal: "Obvyklé",
     settings_param_subtitles_size_bigger: "Velké",
@@ -1295,4 +1296,9 @@ export default {
     filter_keyword_spy: 'Špion',
     filter_keyword_disaster: 'Katastrofa',
     filter_keyword_christmas: 'Vánoce',
+
+    dmca_title_lgbt: 'Obsah omezen',
+    dmca_descr_lgbt: 'Prohlížení není ve vašem regionu možné, protože může obsahovat LGBT obsah. Takový materiál může být v některých zemích zakázán nebo omezen.',
+
+    settings_lgbt_content_block: 'Blokovat LGBT obsah',
 };
