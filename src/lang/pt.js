@@ -281,7 +281,7 @@ export default {
     torrent_parser_voice_amateur: 'Amador',
     torrent_parser_reset: 'Redefinir filtro',
     torrent_parser_empty: 'Falha ao obter resultados',
-    torrent_parser_no_hash: 'Falha ao obter HASH',
+    torrent_parser_no_hash: 'Falha ao obter HASH, tente recarregar o TorrServer',
     torrent_parser_added_to_mytorrents: 'Adicionado a "Meus torrents"',
     torrent_parser_add_to_mytorrents: 'Adicionar a "Meus torrents"',
     torrent_parser_label_title: 'Sinalizador',
@@ -1276,4 +1276,23 @@ export default {
     dmca_descr_lgbt: 'A visualização não está disponível na sua região, pois pode conter conteúdo LGBT. Esse tipo de material pode ser proibido ou restrito em alguns países.',
 
     settings_lgbt_content_block: 'Bloquear conteúdo LGBT',
+
+    // todo:
+    adult_content_title: 'Conteúdo adulto',
+    adult_content_text_warning: 'O conteúdo pode conter material adulto que pode ser inapropriado para alguns espectadores.',
+    adult_content_text_modal: 'Este filme ou série está marcado como contendo conteúdo adulto. Você deve ter 18 anos ou mais para assistir a este material. Por favor, confirme que você atingiu a maioridade para continuar assistindo.',
+
+    adult_content_confirm: 'Tenho 18 anos ou mais',
+    adult_content_deny: 'Tenho menos de 18 anos',
+
+    inner_player_disclaimer_title: 'Aviso do player',
+    inner_player_disclaimer_text: 'Entendo que estou iniciando um player com suporte incompleto e entendo que isso pode causar comportamento atípico no dispositivo. O ideal é mudar para players da família tvOS ou outras alternativas.',
+
+    inner_player_disclaimer_change_player: 'Mudar player',
+    remote_configuration_settings_title: 'Configuração Remota',
+    remote_configuration_registration_text: 'A configuração remota fornece acesso temporário ao seu aplicativo, outro aplicativo poderá instalar extensões e configurar parâmetros.',
+    remote_configuration_waite_text: 'Agora você pode passar este código para outro aplicativo para conceder acesso às configurações.',
+    remote_configuration_open_button: 'Abrir Acesso',
+    remote_configuration_code_life: 'O código é válido',
+    remote_configuration_notice_nocode: 'Falha ao abrir o acesso'
 }

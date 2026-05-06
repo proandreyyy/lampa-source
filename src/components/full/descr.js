@@ -7,6 +7,10 @@ import Select from '../../interaction/select'
 import Emit from '../../utils/emit'
 import TMDB from '../../core/api/sources/tmdb'
 import Router from '../../core/router'
+import Keys from '../../core/tmdb/keys'
+import Warning from '../../interaction/warning'
+import Modal from '../../interaction/modal'
+import Storage from '../../core/storage/storage'
 
 class Descriptiopn extends Emit{
     constructor(data) {
@@ -55,17 +59,22 @@ class Descriptiopn extends Emit{
 
         let key_tags = this.card.keywords ? (this.card.keywords.results || this.card.keywords.keywords) : []
 
-        if(key_tags.length){
-            tags.append(this.tag(Lang.translate('full_keywords'), key_tags, (key)=>{
-                Activity.push({
-                    url: 'discover/' + media,
-                    title: Utils.capitalizeFirstLetter(key.name),
-                    keywords: key.id,
-                    component: 'category_full',
-                    source: 'tmdb',
-                    page: 1
-                })
-            }))
+        if(key_tags.length && key_tags.find){
+            let tags_filter = key_tags.filter(key=>!Keys.adult.find(tag=>tag.indexOf(key.name.toLowerCase()) >= 0))
+                tags_filter = tags_filter.filter(key=>!Keys.lgbt.find(tag=>tag.indexOf(key.name.toLowerCase()) >= 0))
+
+            if(tags_filter.length){
+                tags.append(this.tag(Lang.translate('full_keywords'), tags_filter, (key)=>{
+                    Activity.push({
+                        url: 'discover/' + media,
+                        title: Utils.capitalizeFirstLetter(key.name),
+                        keywords: key.id,
+                        component: 'category_full',
+                        source: 'tmdb',
+                        page: 1
+                    })
+                }))
+            }
         }
 
         if(!this.card.budget) $('.full--budget', this.body).remove()
@@ -74,6 +83,57 @@ class Descriptiopn extends Emit{
         this.body.find('.selector').on('hover:focus hover:enter hover:hover hover:touch',(e)=>{
             this.last = e.target
         })
+
+        if(this.card.adult){
+            let warning = new Warning({
+                type: 'full-adult',
+                title: Lang.translate('adult_content_title'),
+                text: Lang.translate('adult_content_text_warning'),
+                icon: '<svg><use xlink:href="#sprite-adult"></use></svg>',
+                button: {
+                    title: Lang.translate('title_watch')
+                },
+                onSelect: () => {
+                    Modal.open({
+                        title: Lang.translate('adult_content_title'),
+                        size: 'small',
+                        scroll: {
+                            nopadding: true
+                        },
+                        html: $('<div class="about">' + Lang.translate('adult_content_text_modal') + '</div>'),
+                        buttons: [
+                            {
+                                name: Lang.translate('adult_content_confirm'),
+                                onSelect: () => {
+                                    Modal.close()
+
+                                    Controller.toggle('full_descr')
+
+                                    Storage.set('adult_content_view', true)
+
+                                    Lampa.Activity.refresh()
+                                }
+                            },
+                            {
+                                name: Lang.translate('adult_content_deny'),
+                                onSelect: () => {
+                                    Modal.close()
+
+                                    Controller.toggle('full_descr')
+                                }
+                            }
+                        ],
+                        onBack: () => {
+                            Modal.close()
+                            
+                            Controller.toggle('full_descr')
+                        }
+                    })
+                }
+            })
+
+            $('.full-descr__left', this.body).append(warning.render())
+        }
 
         this.html.find('.items-line__body').append(this.body)
 

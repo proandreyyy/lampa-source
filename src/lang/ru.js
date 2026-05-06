@@ -351,7 +351,7 @@ export default {
     torrent_parser_voice_amateur: 'Любительский',
     torrent_parser_reset: 'Сбросить фильтр',
     torrent_parser_empty: 'Не удалось получить результатов',
-    torrent_parser_no_hash: 'Не удалось получить HASH',
+    torrent_parser_no_hash: 'Не удалось получить HASH, попробуйте перезагрузить TorrServer',
     torrent_parser_added_to_mytorrents: 'добавлено в «Мои торренты»',
     torrent_parser_add_to_mytorrents: 'Добавить в «Мои торренты»',
     torrent_parser_label_title: 'Пометить',
@@ -1299,4 +1299,22 @@ export default {
 
     remote_helper_long: 'Удерживайте кнопку (ОК) для вызова меню',
     no_watch_history: 'Нет истории просмотра',
+
+    adult_content_title: 'Взрослый контент',
+    adult_content_text_warning: 'Контент может содержать материалы для взрослых, которые могут быть неуместны для некоторых зрителей.',
+    adult_content_text_modal: 'Этот фильм или сериал помечен как содержащий взрослый контент. Для просмотра этого материала вам должно быть 18 лет или больше. Пожалуйста, подтвердите, что вы достигли совершеннолетия, чтобы продолжить просмотр.',
+
+    adult_content_confirm: 'Мне 18 лет или больше',
+    adult_content_deny: 'Мне меньше 18 лет',
+
+    inner_player_disclaimer_title: 'Дисклеймер плеера',
+    inner_player_disclaimer_text: 'Я понимаю, что запускаю плеер с неполной поддержкой, и понимаю, что это может приводить к нетипичному поведению устройства. Оптимально перейти на плееры семейства tvOS или другие альтернативы.',
+
+    inner_player_disclaimer_change_player: 'Сменить плеер',
+    remote_configuration_settings_title: 'Удалённая конфигурация',
+    remote_configuration_registration_text: 'Удалённая конфигурация предоставляет временный доступ к вашему приложению, другое приложение сможет установить расширения и настроить параметры.',
+    remote_configuration_waite_text: 'Теперь вы можете передать этот код в другое приложение, чтобы предоставить доступ к настройкам.',
+    remote_configuration_open_button: 'Открыть доступ',
+    remote_configuration_code_life: 'Код действителен',
+    remote_configuration_notice_nocode: 'Не удалось открыть доступ'
 }

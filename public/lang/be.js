@@ -283,7 +283,7 @@ export default {
     torrent_parser_voice_amateur: 'Любіцельскі',
     torrent_parser_reset: 'Скінуць фільтр',
     torrent_parser_empty: 'Немагчыма атрымаць вынікаў',
-    torrent_parser_no_hash: 'Не атрымалася атрымаць HASH',
+    torrent_parser_no_hash: 'Не атрымалася атрымаць HASH, паспрабуйце перезагрузить TorrServer',
     torrent_parser_added_to_mytorrents: 'дададзена ў «Мае торэнты»',
     torrent_parser_add_to_mytorrents: 'Дадаць у «Мае торэнты»',
     torrent_parser_label_title: 'Пазначыць',
@@ -1306,4 +1306,23 @@ export default {
     dmca_descr_lgbt: 'Прагляд недаступны ў вашым рэгіёне, так як магчыма змяшчае ЛГБТ-кантэнт. У некаторых краінах такія матэрыялы могуць быць забаронены ці абмежаваны.',
 
     settings_lgbt_content_block: 'Блокіроўка ЛГБТ-контента',
+
+    // todo:
+    adult_content_title: 'Кантэнт для дарослых',
+    adult_content_text_warning: 'Кантэнт можа змяшчаць матэрыялы для дарослых, якія могуць быць непрыдатнымі для некаторых гледачоў.',
+    adult_content_text_modal: 'Гэты фільм або серыял пазначаны як той, які змяшчае кантэнт для дарослых. Для прагляду гэтага матэрыялу вам павінна быць 18 гадоў ці болей. Калі ласка, пацвердзіце, што вы дасягнулі паўналецця, каб працягнуць прагляд.',
+
+    adult_content_confirm: 'Мне 18 гадоў ці болей',
+    adult_content_deny: 'Мне менш за 18 гадоў',
+
+    inner_player_disclaimer_title: 'Дысклеймер плэера',
+    inner_player_disclaimer_text: 'Я разумею, што запускаю плэер з няпоўнай падтрымкай, і разумею, што гэта можа выклікаць нетыповыя паводзіны прылады. Аптымальна перайсці на плэеры сямейства tvOS або іншыя альтэрнатывы.',
+
+    inner_player_disclaimer_change_player: 'Змяніць плэер',
+    remote_configuration_settings_title: 'Аддалёная канфігурацыя',
+    remote_configuration_registration_text: 'Аддалёная канфігурацыя забяспечвае часовы доступ да вашага прыкладання, іншае прыкладанне зможа ўсталёўваць пашырэнні і наладжваць параметры.',
+    remote_configuration_waite_text: 'Цяпер вы можаце перадаць гэты код іншаму прыкладанню, каб даць доступ да налад.',
+    remote_configuration_open_button: 'Адкрыць доступ',
+    remote_configuration_code_life: 'Код сапраўдны',
+    remote_configuration_notice_nocode: 'Не ўдалося адкрыць доступ'
 }

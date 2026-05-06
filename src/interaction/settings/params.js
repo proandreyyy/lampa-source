@@ -254,6 +254,8 @@ function init(){
         'http': '#{settings_param_no}',
         'https': '#{settings_param_yes}',
     }, 'https')
+
+    trigger('request_caching', Platform.is('orsay') || Platform.is('netcast') ? false : true)
 }
 
 /**
@@ -568,7 +570,9 @@ select('parse_lang',{
 select('parse_timeout',{
     '15': '15',
     '30': '30',
-    '60': '60'
+    '60': '60',
+    '90': '90',
+    '120': '120'
 },'15')
 
 select('player_rewind',{
@@ -727,10 +731,9 @@ trigger('card_interfice_cover', true)
 trigger('card_interfice_reactions', true)
 trigger('cache_images', false)
 trigger('interface_sound_play', false)
-trigger('request_caching', true)
 trigger('menu_always', false)
 trigger('vlc_fullscreen', true)
-
+trigger('adult_content_view', false)
 
 
 /**

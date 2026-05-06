@@ -264,7 +264,7 @@ export default {
     torrent_parser_voice_amateur: 'Аматорський',
     torrent_parser_reset: 'Скинути фільтр',
     torrent_parser_empty: 'Не вдалося отримати результатів',
-    torrent_parser_no_hash: 'Неможливо отримати HASH',
+    torrent_parser_no_hash: 'Неможливо отримати HASH, спробуйте перезавантажити TorrServer',
     torrent_parser_added_to_mytorrents: 'додано до «Моїх торрентів»',
     torrent_parser_add_to_mytorrents: 'Додати до «Моїх торентів»',
     torrent_parser_label_title: 'Позначити',
@@ -1266,4 +1266,23 @@ export default {
     dmca_descr_lgbt: 'Перегляд недоступний у вашому регіоні, оскільки, можливо, містить ЛГБТ-контент. У деяких країнах такі матеріали можуть бути заборонені або обмежені.',
 
     settings_lgbt_content_block: 'Блокувати ЛГБТ контент',
+
+    // todo:
+    adult_content_title: 'Контент для дорослих',
+    adult_content_text_warning: 'Контент може містити матеріали для дорослих, які можуть бути неприйнятними для деяких глядачів.',
+    adult_content_text_modal: 'Цей фільм або серіал позначений як такий, що містить контент для дорослих. Для перегляду цього матеріалу вам має бути 18 років або більше. Будь ласка, підтвердіть, що ви досягли повноліття, щоб продовжити перегляд.',
+
+    adult_content_confirm: 'Мені 18 років або більше',
+    adult_content_deny: 'Мені менше 18 років',
+
+    inner_player_disclaimer_title: 'Дисклеймер плеєра',
+    inner_player_disclaimer_text: 'Я розумію, що запускаю плеєр, який має не повну підтримку, також розумію, що це може призводити до нетипової поведінки на пристрої. Оптимально перейти на плеєри сімейства tvOS або інші альтернативи.',
+
+    inner_player_disclaimer_change_player: 'Змінити плеєр',
+    remote_configuration_settings_title: 'Віддалена конфігурація',
+    remote_configuration_registration_text: 'Віддалена конфігурація надає тимчасовий доступ до вашого додатку, інший додаток зможе встановлювати розширення та налаштовувати параметри.',
+    remote_configuration_waite_text: 'Тепер ви можете передати цей код іншому додатку, щоб надати доступ до налаштувань.',
+    remote_configuration_open_button: 'Відкрити доступ',
+    remote_configuration_code_life: 'Код дійсний',
+    remote_configuration_notice_nocode: 'Не вдалося відкрити доступ'
 }
